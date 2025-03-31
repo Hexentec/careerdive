@@ -1,0 +1,85 @@
+.why-us {
+    padding: 4rem 0;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .why-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-image: url('/Grad3.png');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    opacity: 100;
+    z-index: 0;
+  }
+  
+  .why-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .why-us-content {
+    position: relative;
+  }
+  
+  .why-us h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #1f2937;
+    position: relative;
+  }
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  @media (max-width: 1024px) {
+    .why-us::before {
+      width: 30%;
+      opacity: 0.08;
+    }
+    
+    .cards-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .why-us {
+      padding: 3rem 0;
+    }
+    
+    .why-us::before {
+      display: none;
+    }
+    
+    .cards-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .why-us h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .why-us::before {
+      width: 50%;
+    }
+  }
