@@ -9,6 +9,12 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+
+  const handleGetStarted = () => {
+    setIsMenuOpen(false); // Close mobile menu if open
+    window.location.href = 'https://career.hexancare.tech/';
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -79,7 +85,7 @@ const Navbar = () => {
       {/* Right side - Auth Buttons */}
       <div className={`navbar-auth ${isMenuOpen ? 'active' : ''}`}>
         <a href="#signin" className="signin-link" onClick={() => setIsMenuOpen(false)}>Sign In</a>
-        <button className="get-started-btn" onClick={() => setIsMenuOpen(false)}>Get Started</button>
+        <button className="get-started-btn"  onClick={handleGetStarted}>Get Started</button>
       </div>
     </nav>
   );

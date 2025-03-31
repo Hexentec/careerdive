@@ -2,6 +2,11 @@ import React from 'react';
 import './about.css';
 
 const About = () => {
+  const handleGetStarted = () => {
+    
+    window.location.href = 'https://career.hexancare.tech/';
+  };
+
   return (
     <section className="about">
       <div className="about-container">
@@ -20,7 +25,7 @@ const About = () => {
             With over 10 years of experience in the industry, we've helped thousands 
             of individuals transition into their dream careers.
           </p>
-          <button className="about-btn">Get Started</button>
+          <button className="about-btn" onClick={handleGetStarted}>Get Started</button>
         </div>
       </div>
     </section>

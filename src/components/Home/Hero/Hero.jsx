@@ -2,6 +2,11 @@ import React from 'react';
 import './hero.css';
 
 const Hero = () => {
+
+  const handleGetStarted = () => {
+    window.location.href = 'https://career.hexancare.tech/';
+  };
+
   return (
     <section className="hero">
       {/* Decorative background images */}
@@ -27,7 +32,7 @@ const Hero = () => {
       <div className="hero-content">
         <h1>Transform Your Career with Us</h1>
         <p>Join thousands of professionals who have accelerated their careers with our proven programs and expert mentorship.</p>
-        <button className="hero-btn">Get Started</button>
+        <button className="hero-btn" onClick={handleGetStarted}>Get Started</button>
       </div>
     </section>
   );
