@@ -3,7 +3,7 @@
   color: white;
   padding: 6rem 2rem;
   text-align: center;
-  height: 100vh;
+  
   position: relative;
   overflow: hidden;
   isolation: isolate; /* Creates new stacking context */
@@ -11,7 +11,7 @@
 
 .hero-content {
   max-width: 800px;
-  padding-top: 20%;
+  padding-top: 6%;
   margin: 0 auto;
   position: relative;
   z-index: 1; /* Ensures content stays above background images */
@@ -107,7 +107,7 @@
   }
 
   .hero-content{
-    padding-top: 60%;
+    padding-top: 20%;
   }
   
   .hero h1 {
